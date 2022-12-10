@@ -1,5 +1,5 @@
 services:
-   app:
+   my-app:
      image: node:18-alpine
      command: sh -c "yarn install && yarn run dev"
      ports:
