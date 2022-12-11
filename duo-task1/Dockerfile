@@ -2,7 +2,8 @@
 FROM python:3.7
 WORKDIR /app
 # Copy contents into image
- COPY requirements.txt .
+COPY app.py .
+COPY requirements.txt .
 # Install pip dependencies from requirements
 RUN pip3 install -r requirements.txt
 
