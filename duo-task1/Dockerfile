@@ -4,7 +4,8 @@ WORKDIR /app
 # Copy contents into image
  COPY requirements.txt .
 # Install pip dependencies from requirements
-RUN pip3 install requirements.txt
+RUN pip3 install -r requirements.txt
+
 # Set YOUR_NAME environment variable
 ENV YOUR_NAME=friend
 # Expose the correct port
