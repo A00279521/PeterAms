@@ -1,9 +1,9 @@
 name: Test Hello World
 
 on:
- 
-  schedule:
-  - cron: "0/5 * * * *"
+   pull_request:
+    branches:
+    - main
 
 jobs:
 
