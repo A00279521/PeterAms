@@ -18,3 +18,6 @@ jobs:
          
     - name: List directory
       run: ls -la
+      
+    - name: script.sh file
+      run:  bash ./script.sh
