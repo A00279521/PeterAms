@@ -1,0 +1,20 @@
+name: Test Hello World
+
+on:
+ 
+  schedule:
+  - cron: "0/5 * * * *"
+
+jobs:
+
+  test:
+    runs-on: "composite"
+    steps:
+    - name: run a multi script
+      run: |
+         echo Hello world!1
+         echo Hello world!2
+         shell: bash
+         
+    - name: List directory
+      run: ls -la
