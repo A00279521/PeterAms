@@ -2,9 +2,10 @@
  <body>
  <h1>Hello</h1>
  {% for user in users %}
-
- <p>{{ user }}</p>
- 
+   {% if user == %b%  %}
+     <p>{{ user }}</p>
+     else
+     {% endif %}
  {% endfor %}
  </body>
  </html>
