@@ -12,7 +12,7 @@ def harry():
 
 @app.route('/peter')
 def peter():
-     return render_template('peter.html', users=['ben', 'luke', 'harry'])
+     return render_template('peter.html', users=["ben", "harry", "bob", "jay", "matt", "bill"])
 
 
 if __name__ == "__main__":
